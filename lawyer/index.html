@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Law Partners</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <header class="relative h-screen">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73" alt="Law Office" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gray-900 opacity-75"></div>
+        </div>
+        <nav class="fixed w-full z-50 bg-gray-900 bg-opacity-90 transition-all duration-300">
+            <div class="container mx-auto px-6 py-4">
+                <div class="flex items-center justify-between">
+                    <h1 class="text-white text-2xl font-bold flex items-center">Elite Law Partners <span class="text-sm ml-2 text-gray-300">(Images from Unsplash)</span></h1>
+                    <div class="hidden md:flex space-x-8">
+                        <a onclick="scrollToSection('about')" class="text-white hover:text-blue-400 transition duration-300 cursor-pointer">About</a>
+                        <a onclick="scrollToSection('services')" class="text-white hover:text-blue-400 transition duration-300 cursor-pointer">Services</a>
+                        <a onclick="scrollToSection('testimonials')" class="text-white hover:text-blue-400 transition duration-300 cursor-pointer">Testimonials</a>
+                        <a onclick="scrollToSection('contact')" class="text-white hover:text-blue-400 transition duration-300 cursor-pointer">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="relative z-10 container mx-auto px-6 h-full flex items-center">
+            <div class="max-w-2xl">
+                <h2 class="text-5xl font-bold text-white mb-8">Justice Served with Excellence</h2>
+                <p class="text-xl text-gray-200 mb-12">Dedicated legal expertise you can trust. Our experienced team of attorneys is committed to protecting your rights and securing your future.</p>
+                <a onclick="scrollToSection('contact')" class="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition duration-300 cursor-pointer">Schedule Consultation</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="py-20 bg-white scroll-mt-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-gray-800 mb-16 text-center">About Our Firm</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="text-center">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a" alt="Attorney" class="w-48 h-48 rounded-full mx-auto mb-6 object-cover">
+                    <h3 class="text-xl font-semibold mb-2">James Wilson</h3>
+                    <p class="text-gray-600">Managing Partner</p>
+                </div>
+                <div class="text-center">
+                    <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e" alt="Attorney" class="w-48 h-48 rounded-full mx-auto mb-6 object-cover">
+                    <h3 class="text-xl font-semibold mb-2">Sarah Johnson</h3>
+                    <p class="text-gray-600">Senior Partner</p>
+                </div>
+                <div class="text-center">
+                    <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296" alt="Attorney" class="w-48 h-48 rounded-full mx-auto mb-6 object-cover">
+                    <h3 class="text-xl font-semibold mb-2">Michael Chang</h3>
+                    <p class="text-gray-600">Partner</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-gray-100 scroll-mt-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-gray-800 mb-16 text-center">Our Services</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="w-16 h-16 bg-blue-600 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Family Law</h3>
+                    <p class="text-gray-600">Expert guidance through divorce, custody, and family matters with compassion and dedication.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="w-16 h-16 bg-blue-600 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Criminal Defense</h3>
+                    <p class="text-gray-600">Strong defense strategies and protection of your rights in criminal cases.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="w-16 h-16 bg-blue-600 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Personal Injury</h3>
+                    <p class="text-gray-600">Dedicated representation for accident victims seeking fair compensation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-20 bg-white scroll-mt-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-gray-800 mb-16 text-center">Client Testimonials</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <p class="text-gray-600 mb-6">"Elite Law Partners provided exceptional service during my case. Their expertise and dedication were invaluable."</p>
+                    <div class="flex items-center">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" alt="Client" class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <div>
+                            <h4 class="font-semibold">Emily Rodriguez</h4>
+                            <p class="text-gray-500">Family Law Client</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <p class="text-gray-600 mb-6">"Professional, knowledgeable, and committed to achieving the best possible outcome for their clients."</p>
+                    <div class="flex items-center">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e" alt="Client" class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <div>
+                            <h4 class="font-semibold">David Thompson</h4>
+                            <p class="text-gray-500">Corporate Law Client</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-gray-100 scroll-mt-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-gray-800 mb-16 text-center">Contact Us</h2>
+            <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8">
+                <form class="grid grid-cols-1 gap-6">
+                    <div>
+                        <label class="block text-gray-700 mb-2" for="name">Name</label>
+                        <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2" for="email">Email</label>
+                        <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2" for="phone">Phone</label>
+                        <input type="tel" id="phone" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2" for="message">Message</label>
+                        <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"></textarea>
+                    </div>
+                    <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-12">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Elite Law Partners</h3>
+                    <p class="text-gray-400">Committed to excellence in legal services.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact Info</h3>
+                    <p class="text-gray-400">123 Legal Street<br>New York, NY 10001<br>Phone: (555) 123-4567<br>Email: info@elitelawpartners.com</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Office Hours</h3>
+                    <p class="text-gray-400">Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: By Appointment<br>Sunday: Closed</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+</body>
+</html>
