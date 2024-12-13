@@ -1,2 +1,7 @@
-# landig-pages
- Landing pages from buisness
+# Pages
+ 
+ Landing pages from different buisness
+
+# Stack
+
+Html | Tailwindcss
